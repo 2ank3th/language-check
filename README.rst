@@ -74,12 +74,12 @@ If you want to use a language tool server which is run on a remote server. You c
 >>>  java -cp languagetool-server.jar org.languagetool.server.HTTPServer \
      --port "$port" --public
 
- `--public` makes server public. Use URL to above server as an argument to LanguageTool constructor.
+ --public makes server public. Use URL to above server as an argument to LanguageTool constructor.
 
-        serverConfig = {}
-        serverConfig["host"] = <URL_WITHOUT_HTTP>
-        serverConfig["port"] = <PORT>
-        grammarTool = language_check.LanguageTool('en-US', remote_server=serverConfig)
+>>>serverConfig = {}
+>>>serverConfig["host"] = <URL_WITHOUT_HTTP>
+>>>serverConfig["port"] = <PORT>
+>>>grammarTool = language_check.LanguageTool('en-US', remote_server=serverConfig)
 
 
 Prerequisites
